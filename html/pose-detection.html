@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Multiple object detection using pre trained model in TensorFlow.js</title>
+		<meta charset="utf-8" />
+		<!-- Import the webpage's stylesheet -->
+		<link
+			rel="stylesheet"
+			href="/styles/object-detection.css"
+		/>
+	</head>
+	<body>
+		<canvas
+			id="canvas"
+			width="640"
+			height="360"
+			style="border: 1px solid #000000; position: absolute; top: 20; left: 20"
+		></canvas>
+
+		<img
+			id="exampleImg"
+			width="640"
+			height="360"
+			crossorigin
+			src="https://storage.googleapis.com/jmstore/TensorFlowJS/EdX/standing.jpg"
+		/>
+
+		<!-- Import TensorFlow.js library -->
+		<!-- Require the peer dependencies of pose-detection. -->
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
+
+		<!-- You must explicitly require a TF.js backend if you're not using the TF.js union bundle. -->
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+		<!-- Alternatively you can use the WASM backend: <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/dist/tf-backend-wasm.js"></script> -->
+
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection"></script>
+
+		<!-- Import the page's JavaScript to do some stuff -->
+		<script
+			src="/scripts/pose-detection.js"
+			defer
+		></script>
+	</body>
+</html>

@@ -2,4 +2,4 @@
 package-lock.json
 
 #node-modules
-/node-modules/
+/node_modules
