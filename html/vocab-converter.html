@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1"
+		/>
+		<title>Vocab to JS Converter for Model Maker</title>
+
+		<!-- import the webpage's stylesheet -->
+		<style>
+			body {
+				font-family: helvetica, arial, sans-serif;
+				margin: 2em;
+			}
+
+			h1 {
+				color: #f0821b;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Vocab to JS Converter for Model Maker</h1>
+
+		<p>
+			Use this page to take a vocab file produced by
+			<a href="https://www.tensorflow.org/lite/tutorials/model_maker_text_classification"
+				>Model Maker's average word embedding trained model</a
+			>
+			and reformat this to be more friendly for JS consumption.
+		</p>
+		<p>
+			You can
+			<a
+				href="https://glitch.com/edit/#!/average-word-embedding-vocab-to-js-converter?path=script.js%3A14%3A48"
+				target="_blank"
+				>view the project source</a
+			>
+			for this page here if you are curious.
+		</p>
+
+		<p>Select vocab file produced by model maker:</p>
+		<input
+			id="file"
+			type="file"
+		/>
+
+		<script
+			src="/scripts/vocab-converter.js"
+			defer
+		></script>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-F6N1DT2QWE"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+			gtag("config", "G-F6N1DT2QWE");
+		</script>
+	</body>
+</html>
